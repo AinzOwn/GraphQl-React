@@ -1,0 +1,21 @@
+query {
+  messages {
+    _id
+    title
+    content
+    author
+  }
+}
+
+mutation {
+  createMessage (
+    title: "Primero",
+    content: "Creado desde mutation",
+    author: "Dazai"
+  ) {
+    _id
+    title
+    content
+    author
+  }
+}
